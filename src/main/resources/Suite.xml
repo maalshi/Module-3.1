@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test name="TestNgExample">
+        <parameter name="a" value="1"/>
+        <parameter name="b" value="2"/>
+        <parameter name="expected" value="3"/>
+        <classes>
+            <class name="runner.TestNG.TestCalculatorTestNGCosDouble">
+            </class>
+            <class name="runner.TestNG.TestCalculatorTestNGCtgDouble">
+            </class>
+            <class name="runner.TestNG.TestCalculatorTestNGDivLong">
+            </class>
+            <class name="runner.TestNG.TestCalculatorTestNGDivDouble">
+            </class>
+            <class name="runner.TestNG.TestCalculatorTestNGMultLong">
+            </class>
+            <class name="runner.TestNG.TestCalculatorTestNGMultDouble">
+            </class>
+            <class name="runner.TestNG.TestCalculatorTestNGPowDouble">
+            </class>
+            <class name="runner.TestNG.TestCalculatorTestNGSinDouble">
+            </class>
+            <class name="runner.TestNG.TestCalculatorTestNGSqrtDouble">
+            </class>
+            <class name="runner.TestNG.TestCalculatorTestNGSubDouble">
+            </class>
+            <class name="runner.TestNG.TestCalculatorTestNGSubLong">
+            </class>
+            <class name="runner.TestNG.TestCalculatorTestNGSumDouble">
+            </class>
+            <class name="runner.TestNG.TestCalculatorTestNGSumLong">
+            </class>
+            <class name="runner.TestNG.TestCalculatorTestNGTgDouble">
+            </class>
+        </classes>
+    </test>
+</suite>
