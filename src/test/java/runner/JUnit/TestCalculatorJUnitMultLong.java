@@ -1,7 +1,9 @@
 package runner.JUnit;
 
 import com.epam.tat.module4.Calculator;
+import org.junit.AfterClass;
 import org.junit.Assert;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
@@ -9,16 +11,24 @@ import org.junit.Test;
  */
 public class TestCalculatorJUnitMultLong {
 
-    Calculator calculator;
+    Calculator calculator = new Calculator();
+
+    @BeforeClass
+    public static void start(){
+        System.out.println("Test execution started");
+    }
 
 
     @Test
     public void testMult(){
-        calculator = new Calculator();
         long mult = calculator.mult(5,6);
         Assert.assertEquals(mult, 30);
 
 
 
+    }
+    @AfterClass
+    public static void finish (){
+        System.out.println("Test was executed");
     }
 }
